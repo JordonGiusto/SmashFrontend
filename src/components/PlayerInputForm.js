@@ -27,7 +27,7 @@ function PlayerInputForm() {
   }
   function submit(){
     if(! name.length > 0 ) return
-    fetch(`http://25.12.183.124:8000/player?name=${name}&pin=${pin}`, {
+    fetch(`http://196.168.1.112:8000/player?name=${name}&pin=${pin}`, {
       method: 'POST',
     })
   }

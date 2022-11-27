@@ -176,7 +176,7 @@ function GameInputTable(props){
           games:games
         }
         console.log(body)
-        await fetch('http://25.12.183.124:8000/set',
+        await fetch('http://196.168.1.112:8000/set',
         {
         method: 'POST',
         mode: 'cors',

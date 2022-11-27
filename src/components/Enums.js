@@ -94,7 +94,7 @@ const Characters = {
 let Players = []
 
 async function getPlayersFromServer(setPlayers){
-    Players = await fetch('http://25.12.183.124:8000/player',{
+    Players = await fetch('http://196.168.1.112:8000/player',{
         method: 'GET',
         mode: 'cors'
         })
