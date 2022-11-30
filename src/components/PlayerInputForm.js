@@ -26,8 +26,12 @@ function PlayerInputForm() {
     setPin(e.target.value)
   }
   function submit(){
+    var val = window.confirm(`Are you sure you want to create a new player named ${name} with pin ${pin}?`)
+    if(!val){
+      return
+    }
     if(! name.length > 0 ) return
-    fetch(`http://196.168.1.112:8000/player?name=${name}&pin=${pin}`, {
+    fetch(`http://34.125.211.66/api/player?name=${name}&pin=${pin}`, {
       method: 'POST',
     })
   }

@@ -94,7 +94,7 @@ const Characters = {
 let Players = []
 
 async function getPlayersFromServer(setPlayers){
-    Players = await fetch('http://196.168.1.112:8000/player',{
+    Players = await fetch('http://34.125.211.66/api/player',{
         method: 'GET',
         mode: 'cors'
         })
@@ -116,7 +116,8 @@ async function getPlayersFromServer(setPlayers){
     //Players.unshift([0, 'None',0])
     
     setPlayers(Players)
-    console.log(Players)
+
+    console.log(Players.map((player)=>[player[0],player[1],player[2]]))
 }
 
 export {Characters, Players, getPlayersFromServer}

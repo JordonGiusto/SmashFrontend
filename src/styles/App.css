@@ -1,8 +1,15 @@
 .App {
   text-align: center;
+  min-height: 100%;
 }
 caption{
   text-align: left;
+}
+body{
+  min-height: 100vh;
+}
+#root{
+  min-height: 100%;
 }
 
 table {
@@ -35,7 +42,7 @@ tr:nth-child(even) {
   border: #bbbbbb 2px solid;
   border-top-width: 0;
   border-bottom-width: 0;
-  height: 150vh;
+  min-height: 100vh;
 }
 
 .Ranking, .otherSidebar{

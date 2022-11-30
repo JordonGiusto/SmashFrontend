@@ -175,8 +175,10 @@ function GameInputTable(props){
           p2: props.players[state.players[(winnerIndex + 1)%2].name -1][0],
           games:games
         }
+        var val = window.confirm("Are you sure you want to submit this set?")
+        if(!val) return
         console.log(body)
-        await fetch('http://196.168.1.112:8000/set',
+        await fetch('http://34.125.211.66/api/set',
         {
         method: 'POST',
         mode: 'cors',
